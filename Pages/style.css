@@ -1,0 +1,519 @@
+:root {
+    --bg: #0d0f12;
+    --bg-panel: #15181c;
+    --bg-panel-2: #1b1f24;
+    --line: #2a2f36;
+    --text: #e8eaed;
+    --text-dim: #8b929c;
+    --accent: #ff5e1a;
+    --accent-dim: #ad3f12;
+    --teal: #1fd9c4;
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+
+.first {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 32px;
+}
+
+.signin {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 70px;
+}
+
+.header-forge {
+    font-family: var(--font-display);
+    color: var(--accent);
+    text-align: center;
+    font-size: 70px;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    width: 100%; /* Ensures the wrapper takes full width of the form */
+    margin-top: 20px; /* Optional: Replaces your <br> tags for cleaner spacing */
+}
+
+.btn-primary-1 {
+    background: var(--accent);
+    color: #0d0f12;
+    font-weight: 600;
+    padding: 22px 40px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+/* 1. The wrapper for each input row */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stacks the label directly above the input */
+    margin-bottom: 24px; /* Creates clean spacing between rows */
+    width: 100%; /* Ensures it spans the width of your form */
+    font-family: var(--font-body); /* Uses your body font ('Inter') */
+}
+
+/* 2. Styling the Text Labels */
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text); /* Uses your primary text color (#e8eaed) */
+    margin-bottom: 8px; /* Pushes the input line slightly down */
+}
+
+/* 3. The Minimalist Underline Input Fields */
+.input-group input {
+    background: transparent; /* Removes the default white box fill */
+    border: none; /* Erases all top, left, and right borders */
+    border-bottom: 2px solid var(--line); /* Soft default line color (#2a2f36) */
+
+    padding: 8px 0; /* Adds padding on top and bottom, keeps left flat */
+    font-family: var(
+        --font-mono
+    ); /* Swaps the input text to your clean monospace font */
+    font-size: 1rem;
+    color: var(--text); /* Colors the text you type */
+    outline: none; /* Removes the default browser focus outline ring */
+    transition: border-bottom-color 0.2s ease;
+}
+
+/* 4. Placeholder Text Styling (The faint text inside) */
+.input-group input::placeholder {
+    color: var(--text-dim); /* Uses your dim text color (#8b929c) */
+    font-size: 0.95rem;
+}
+
+/* 5. Focus Effect (Changes line color when clicked) */
+.input-group input:focus {
+    border-bottom: 2px solid var(--accent); /* Smoothly transitions to your orange accent color (#ff5e1a) */
+}
+
+/* 6. Updating your primary button wrapper to use the design system tokens */
+.hero-cta {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    width: 100%; /* Ensures the wrapper takes full width of the form */
+    margin-top: 28px; /* Clean spacing at the bottom */
+}
+
+/* 7. Updating your primary button styles */
+.btn-primary-1 {
+    background: var(--accent); /* Primary accent orange */
+    color: var(
+        --bg
+    ); /* Dark background color for contrasting text inside the button */
+    font-family: var(
+        --font-display
+    ); /* Bold display font for the action button */
+    font-weight: 600;
+    padding: 15px 28px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+/* Container wrapping the text and the buttons */
+.social-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; /* Adds clear separation below your sign-in button */
+    width: 100%;
+}
+
+/* "Or you can join with" Text style */
+.social-text {
+    font-family: var(--font-body);
+    color: var(--text-dim); /* Faded text color (#8b929c) */
+    font-size: 0.9rem;
+    margin-bottom: 20px; /* Gap between text and icon row */
+}
+
+/* Row wrapper for the circular buttons */
+.social-icons-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Clean horizontal gap between the circles */
+}
+
+/* Base style for ALL social buttons */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px; /* Perfect circular dimensions */
+    height: 52px;
+    border-radius: 50%; /* Forces it into a flawless circle */
+    border: none;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        filter 0.2s ease;
+}
+
+/* Icon sizing inside the circle wrapper */
+.social-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Individual branding colors */
+.google-btn {
+    background-color: #ffffff; /* Clean white background for the colorful Google G */
+}
+
+.facebook-btn {
+    background-color: #1877f2; /* Official Facebook blue */
+    color: #ffffff; /* Makes the F icon white */
+}
+
+.apple-btn {
+    background-color: var(--text); /* Uses your off-white token (#e8eaed) */
+    color: var(
+        --bg
+    ); /* Uses your absolute dark background for the leaf silhouette */
+}
+
+/* Interaction Effects */
+.social-btn:hover {
+    transform: translateY(-3px); /* Soft jump up effect on hover */
+    filter: brightness(1.1); /* Slightly lights up the buttons when hovered */
+}
+
+.social-btn:active {
+    transform: translateY(0); /* Pushes back down when clicked */
+}
+
+/* Flex container to hold the text elements in one single baseline row */
+.social-text-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* Snug, natural space between the words */
+    margin-bottom: 20px; /* Keeps the same gap above your icons */
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+}
+
+/* Replaces your old standalone .social-text margin settings */
+.social-text {
+    color: var(--text-dim);
+    margin: 0; /* Strips default paragraph margins */
+}
+
+/* Faint "or" separator text */
+.text-separator {
+    color: var(--text-dim);
+    opacity: 0.6; /* Softens the middle "or" slightly */
+}
+
+/* Your clean, new interactive anchor tag link */
+.ghost-link {
+    color: var(--text-dim);
+    text-decoration: underline;
+    text-underline-offset: 3px; /* Keeps the underline readable */
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+/* Turns your orange accent color when hovered */
+.ghost-link:hover {
+    color: var(--accent);
+}
+
+/* Simple hover effect to swap to your dimmed accent color */
+.btn-primary-1:hover {
+    background: var(--accent-dim);
+}
+
+/* Master Screen Layout */
+.login-container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+/* LEFT HALF: Shifted slightly to the left */
+.form-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start; /* MODIFIED: Aligns form to the left side */
+    align-items: center;
+    padding-left: 10%; /* Shifts it in from the edge perfectly */
+    padding-right: 5%;
+    z-index: 2;
+}
+
+.form-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* RIGHT HALF: Geometric Image Styling */
+.image-section {
+    flex: 1.2; /* Gives the image a slightly wider presence */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* The frame that cuts the image and holds the custom border token */
+.image-wrapper {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    background: var(--line); /* Creates a subtle frame border edge */
+    padding: 2px; /* Border thickness */
+
+    /* MODIFIED: Cuts the wrapper into a sharp, geometric high-tech angle */
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+    /* MODIFIED: Smoothly fades the entire element to the right */
+    mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 60%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 1) 60%,
+        rgba(0, 0, 0, 0.1) 100%
+    );
+}
+
+/* Inside Image Settings */
+.side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Keeps the exact same cut profile as the border container wrapper */
+    clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* 100% of the viewport height */
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px; /* Keeps the form at a readable width */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* --- Cart Page Specific Styles --- */
+
+.cart-summary {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.cart-items-list {
+    list-style: none;
+    margin-top: 20px;
+    border-top: 1px solid var(--line);
+}
+
+.cart-item-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 20px;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.cart-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cart-actions {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 40px;
+}
+
+.checkout-section {
+    background: var(--bg-panel-2);
+    border: 1px solid var(--line);
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.checkout-section h2 {
+    font-family: var(--font-display);
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg-panel);
+    padding: 16px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.payment-option input {
+    accent-color: var(--accent);
+}
+
+.checkout-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 18px;
+}
+
+/* --- Marquee Animation --- */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background: var(--bg-panel);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: 8px 0;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-item {
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.marquee-item::before {
+    content: ">";
+    color: var(--accent);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* About Page Specific Styles */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mission-card {
+    border: 1px solid var(--line);
+    padding: 40px;
+    border-radius: 8px;
+    background: var(--bg-panel);
+}
+
+.mission-card h3 {
+    font-family: var(--font-display);
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.mission-card p {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.lifecycle-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.step-num {
+    font-family: var(--font-mono);
+    font-size: 3rem;
+    color: var(--accent);
+    opacity: 0.5;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.lifecycle-step h4 {
+    margin-bottom: 10px;
+    font-family: var(--font-display);
+}
+
+.lifecycle-step p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+.accent-text {
+    color: var(--accent);
+}
+
+@media (max-width: 900px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+    .lifecycle-grid {
+        grid-template-columns: 1fr;
+    }
+}

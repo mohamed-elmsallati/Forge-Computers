@@ -1,0 +1,162 @@
+/* Style your form so it doesn't stretch infinitely */
+:root {
+    --bg: #0d0f12;
+    --bg-panel: #15181c;
+    --bg-panel-2: #1b1f24;
+    --line: #2a2f36;
+    --text: #e8eaed;
+    --text-dim: #8b929c;
+    --accent: #ff5e1a;
+    --accent-dim: #ad3f12;
+    --teal: #1fd9c4;
+    --font-display: "Space Grotesk", sans-serif;
+    --font-body: "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+}
+
+.body {
+    background: url("../public/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.first {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 32px;
+}
+
+.signin {
+    font-family: var(--font-display);
+    text-align: center;
+    font-size: 70px;
+}
+
+.header-forge {
+    font-family: var(--font-display);
+    color: var(--accent);
+    text-align: center;
+    font-size: 70px;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    width: 100%; /* Ensures the wrapper takes full width of the form */
+    margin-top: 20px; /* Optional: Replaces your <br> tags for cleaner spacing */
+}
+
+.btn-primary-1 {
+    background: var(--accent);
+    color: #0d0f12;
+    font-weight: 600;
+    padding: 22px 40px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+/* 1. The wrapper for each input row */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stacks the label directly above the input */
+    margin-bottom: 24px; /* Creates clean spacing between rows */
+    width: 100%; /* Ensures it spans the width of your form */
+    font-family: var(--font-body); /* Uses your body font ('Inter') */
+}
+
+/* 2. Styling the Text Labels */
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text); /* Uses your primary text color (#e8eaed) */
+    margin-bottom: 8px; /* Pushes the input line slightly down */
+}
+
+/* 3. The Minimalist Underline Input Fields */
+.input-group input {
+    background: transparent; /* Removes the default white box fill */
+    border: none; /* Erases all top, left, and right borders */
+    border-bottom: 2px solid var(--line); /* Soft default line color (#2a2f36) */
+
+    padding: 8px 0; /* Adds padding on top and bottom, keeps left flat */
+    font-family: var(
+        --font-mono
+    ); /* Swaps the input text to your clean monospace font */
+    font-size: 1rem;
+    color: var(--text); /* Colors the text you type */
+    outline: none; /* Removes the default browser focus outline ring */
+    transition: border-bottom-color 0.2s ease;
+}
+
+/* 4. Placeholder Text Styling (The faint text inside) */
+.input-group input::placeholder {
+    color: var(--text-dim); /* Uses your dim text color (#8b929c) */
+    font-size: 0.95rem;
+}
+
+/* 5. Focus Effect (Changes line color when clicked) */
+.input-group input:focus {
+    border-bottom: 2px solid var(--accent); /* Smoothly transitions to your orange accent color (#ff5e1a) */
+}
+
+/* 6. Updating your primary button wrapper to use the design system tokens */
+.hero-cta {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    width: 100%; /* Ensures the wrapper takes full width of the form */
+    margin-top: 28px; /* Clean spacing at the bottom */
+}
+
+/* 7. Updating your primary button styles */
+.btn-primary-1 {
+    background: var(--accent); /* Primary accent orange */
+    color: var(
+        --bg
+    ); /* Dark background color for contrasting text inside the button */
+    font-family: var(
+        --font-display
+    ); /* Bold display font for the action button */
+    font-weight: 600;
+    padding: 15px 28px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition:
+        background 0.15s ease,
+        transform 0.15s ease;
+}
+
+/* Simple hover effect to swap to your dimmed accent color */
+.btn-primary-1:hover {
+    background: var(--accent-dim);
+}
+
+.login-container {
+    /*background: url("../public/background.jpg");*/
+
+    background: url("../public/background.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    min-height: 100vh; /* 100% of the viewport height */
+
+    box-shadow: 0px 20px 80px 0px rgb(355, 90, 50);
+}
+.login-form {
+    width: 100%;
+    max-width: 400px; /* Keeps the form at a readable width */
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+}
