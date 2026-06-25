@@ -34,7 +34,7 @@
 
 .hero-cta {
     display: flex;
-    justify-content: center; /* Centers the button horizontally */
+    justify-content: center;
     width: 100%; /* Ensures the wrapper takes full width of the form */
     margin-top: 20px; /* Optional: Replaces your <br> tags for cleaner spacing */
 }
