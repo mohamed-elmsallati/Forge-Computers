@@ -8,9 +8,9 @@
     --accent: #ff5e1a;
     --accent-dim: #ad3f12;
     --teal: #1fd9c4;
-    --font-display: "Space Grotesk", sans-serif;
-    --font-body: "Inter", sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
+    --font-display: "space grotesk", sans-serif;
+    --font-body: "inter", sans-serif;
+    --font-mono: "jetbrains mono", monospace;
 }
 
 .first {
@@ -37,6 +37,7 @@
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+}
 
 .btn-primary-1 {
     background: var(--accent);
@@ -74,9 +75,7 @@
     border-bottom: 2px solid var(--line);
 
     padding: 8px 0;
-    font-family: var(
-        --font-mono
-    );
+    font-family: var(--font-mono);
     font-size: 1rem;
     color: var(--text);
     outline: none;
@@ -101,12 +100,8 @@
 
 .btn-primary-1 {
     background: var(--accent);
-    color: var(
-        --bg
-    );
-    font-family: var(
-        --font-display
-    );
+    color: var(--bg);
+    font-family: var(--font-display);
     font-weight: 600;
     padding: 15px 28px;
     text-align: center;
@@ -131,21 +126,22 @@
     font-family: var(--font-body);
     color: var(--text-dim);
     font-size: 0.9rem;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+}
 
 .social-icons-row {
     display: flex;
     justify-content: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .social-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px; 
+    width: 52px;
     height: 52px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: none;
     cursor: pointer;
     transition:
@@ -164,21 +160,21 @@
 
 .facebook-btn {
     background-color: #1877f2;
-    color: #ffffff; 
+    color: #ffffff;
 }
 
 .apple-btn {
     background-color: var(--text);
-    color: var(--bg); 
+    color: var(--bg);
 }
 
 .social-btn:hover {
-    transform: translateY(-3px);
+    transform: translatey(-3px);
     filter: brightness(1.1);
 }
 
 .social-btn:active {
-    transform: translateY(0);
+    transform: translatey(0);
 }
 
 .social-text-wrapper {
@@ -198,13 +194,13 @@
 
 .text-separator {
     color: var(--text-dim);
-    opacity: 0.6; 
+    opacity: 0.6;
 }
 
 .ghost-link {
     color: var(--text-dim);
     text-decoration: underline;
-    text-underline-offset: 3px; 
+    text-underline-offset: 3px;
     cursor: pointer;
     transition: color 0.2s ease;
 }
@@ -242,7 +238,7 @@
 }
 
 .image-section {
-    flex: 1.2; 
+    flex: 1.2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -255,7 +251,7 @@
     height: 85vh;
     position: relative;
     background: var(--line);
-    padding: 2px; 
+    padding: 2px;
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
     mask-image: linear-gradient(
         to right,
@@ -407,10 +403,10 @@
 
 @keyframes marquee {
     0% {
-        transform: translateX(100%);
+        transform: translatex(100%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translatex(-100%);
     }
 }
 
