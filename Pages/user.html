@@ -21,32 +21,50 @@
                     <a href="/Pages/about.html">About Us</a>
                 </nav>
                 <div class="nav-actions">
-                    <a href="/Pages/cart.html" class="cart-btn">Cart · <span class="cart-count">0</span></a>
-                    <button class="btn-secondary" id="signout-btn" style="margin-left:1rem;">Sign Out</button>
+                    <a href="/Pages/cart.html" class="cart-btn"
+                        >Cart · <span class="cart-count">0</span></a
+                    >
                 </div>
             </div>
         </header>
 
         <main class="container">
-            <section class="section" style="text-align:center; padding-top: 6rem;">
-                <h1 id="welcome-message">Hello, <span id="user-display">...</span>!</h1>
-                <p style="margin-top:1rem; color: var(--text-muted, #888);">Welcome back to your Forge dashboard.</p>
-                <div class="hero-cta" style="justify-content:center; margin-top:2rem;">
-                    <a href="/Pages/shop.html" class="btn-primary">Browse Products</a>
-                    <a href="/index.html" class="btn-secondary">Return to Home</a>
+            <section
+                class="section"
+                style="text-align: center; padding-top: 6rem"
+            >
+                <h1 id="welcome-message">
+                    Hello, <span id="user-display">...</span>!
+                </h1>
+                <p style="margin-top: 1rem; color: var(--text-muted, #888)">
+                    Welcome back to your Forge dashboard.
+                </p>
+                <div
+                    class="hero-cta"
+                    style="justify-content: center; margin-top: 2rem"
+                >
+                    <a href="/Pages/shop.html" class="btn-primary"
+                        >Browse Products</a
+                    >
+                    <a href="/index.html" class="btn-secondary"
+                        >Return to Home</a
+                    >
                 </div>
             </section>
         </main>
 
         <script src="/src/script.js?v=2"></script>
         <script>
-            const username = localStorage.getItem('forge_username');
-            document.getElementById('user-display').textContent = username || 'Guest';
+            const username = localStorage.getItem("forge_username");
+            document.getElementById("user-display").textContent =
+                username || "Guest";
 
-            document.getElementById('signout-btn').addEventListener('click', function () {
-                localStorage.removeItem('forge_username');
-                window.location.href = '/Pages/signin.html';
-            });
+            document
+                .getElementById("signout-btn")
+                .addEventListener("click", function () {
+                    localStorage.removeItem("forge_username");
+                    window.location.href = "/Pages/signin.html";
+                });
         </script>
     </body>
 </html>
