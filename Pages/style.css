@@ -35,9 +35,8 @@
 .hero-cta {
     display: flex;
     justify-content: center;
-    width: 100%; /* Ensures the wrapper takes full width of the form */
-    margin-top: 20px; /* Optional: Replaces your <br> tags for cleaner spacing */
-}
+    width: 100%;
+    margin-top: 20px;
 
 .btn-primary-1 {
     background: var(--accent);
@@ -54,67 +53,60 @@
         transform 0.15s ease;
 }
 
-/* 1. The wrapper for each input row */
 .input-group {
     display: flex;
-    flex-direction: column; /* Stacks the label directly above the input */
-    margin-bottom: 24px; /* Creates clean spacing between rows */
-    width: 100%; /* Ensures it spans the width of your form */
-    font-family: var(--font-body); /* Uses your body font ('Inter') */
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 100%;
+    font-family: var(--font-body);
 }
 
-/* 2. Styling the Text Labels */
 .form-label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--text); /* Uses your primary text color (#e8eaed) */
-    margin-bottom: 8px; /* Pushes the input line slightly down */
+    color: var(--text);
+    margin-bottom: 8px;
 }
 
-/* 3. The Minimalist Underline Input Fields */
 .input-group input {
-    background: transparent; /* Removes the default white box fill */
-    border: none; /* Erases all top, left, and right borders */
-    border-bottom: 2px solid var(--line); /* Soft default line color (#2a2f36) */
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--line);
 
-    padding: 8px 0; /* Adds padding on top and bottom, keeps left flat */
+    padding: 8px 0;
     font-family: var(
         --font-mono
-    ); /* Swaps the input text to your clean monospace font */
+    );
     font-size: 1rem;
-    color: var(--text); /* Colors the text you type */
-    outline: none; /* Removes the default browser focus outline ring */
+    color: var(--text);
+    outline: none;
     transition: border-bottom-color 0.2s ease;
 }
 
-/* 4. Placeholder Text Styling (The faint text inside) */
 .input-group input::placeholder {
-    color: var(--text-dim); /* Uses your dim text color (#8b929c) */
+    color: var(--text-dim);
     font-size: 0.95rem;
 }
 
-/* 5. Focus Effect (Changes line color when clicked) */
 .input-group input:focus {
-    border-bottom: 2px solid var(--accent); /* Smoothly transitions to your orange accent color (#ff5e1a) */
+    border-bottom: 2px solid var(--accent);
 }
 
-/* 6. Updating your primary button wrapper to use the design system tokens */
 .hero-cta {
     display: flex;
-    justify-content: center; /* Centers the button horizontally */
-    width: 100%; /* Ensures the wrapper takes full width of the form */
-    margin-top: 28px; /* Clean spacing at the bottom */
+    justify-content: center;
+    width: 100%;
+    margin-top: 28px;
 }
 
-/* 7. Updating your primary button styles */
 .btn-primary-1 {
-    background: var(--accent); /* Primary accent orange */
+    background: var(--accent);
     color: var(
         --bg
-    ); /* Dark background color for contrasting text inside the button */
+    );
     font-family: var(
         --font-display
-    ); /* Bold display font for the action button */
+    );
     font-weight: 600;
     padding: 15px 28px;
     text-align: center;
@@ -127,38 +119,33 @@
         transform 0.15s ease;
 }
 
-/* Container wrapping the text and the buttons */
 .social-login-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 40px; /* Adds clear separation below your sign-in button */
+    margin-top: 40px;
     width: 100%;
 }
 
-/* "Or you can join with" Text style */
 .social-text {
     font-family: var(--font-body);
-    color: var(--text-dim); /* Faded text color (#8b929c) */
+    color: var(--text-dim);
     font-size: 0.9rem;
-    margin-bottom: 20px; /* Gap between text and icon row */
-}
+    margin-bottom: 20px; 
 
-/* Row wrapper for the circular buttons */
 .social-icons-row {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Clean horizontal gap between the circles */
+    gap: 20px; 
 }
 
-/* Base style for ALL social buttons */
 .social-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 52px; /* Perfect circular dimensions */
+    width: 52px; 
     height: 52px;
-    border-radius: 50%; /* Forces it into a flawless circle */
+    border-radius: 50%; 
     border: none;
     cursor: pointer;
     transition:
@@ -166,82 +153,70 @@
         filter 0.2s ease;
 }
 
-/* Icon sizing inside the circle wrapper */
 .social-btn svg {
     width: 24px;
     height: 24px;
 }
 
-/* Individual branding colors */
 .google-btn {
-    background-color: #ffffff; /* Clean white background for the colorful Google G */
+    background-color: #ffffff;
 }
 
 .facebook-btn {
-    background-color: #1877f2; /* Official Facebook blue */
-    color: #ffffff; /* Makes the F icon white */
+    background-color: #1877f2;
+    color: #ffffff; 
 }
 
 .apple-btn {
-    background-color: var(--text); /* Uses your off-white token (#e8eaed) */
-    color: var(
-        --bg
-    ); /* Uses your absolute dark background for the leaf silhouette */
+    background-color: var(--text);
+    color: var(--bg); 
 }
 
-/* Interaction Effects */
 .social-btn:hover {
-    transform: translateY(-3px); /* Soft jump up effect on hover */
-    filter: brightness(1.1); /* Slightly lights up the buttons when hovered */
+    transform: translateY(-3px);
+    filter: brightness(1.1);
 }
 
 .social-btn:active {
-    transform: translateY(0); /* Pushes back down when clicked */
+    transform: translateY(0);
 }
 
-/* Flex container to hold the text elements in one single baseline row */
 .social-text-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px; /* Snug, natural space between the words */
-    margin-bottom: 20px; /* Keeps the same gap above your icons */
+    gap: 6px;
+    margin-bottom: 20px;
     font-family: var(--font-body);
     font-size: 0.9rem;
 }
 
-/* Replaces your old standalone .social-text margin settings */
 .social-text {
     color: var(--text-dim);
-    margin: 0; /* Strips default paragraph margins */
+    margin: 0;
 }
 
-/* Faint "or" separator text */
 .text-separator {
     color: var(--text-dim);
-    opacity: 0.6; /* Softens the middle "or" slightly */
+    opacity: 0.6; 
 }
 
-/* Your clean, new interactive anchor tag link */
 .ghost-link {
     color: var(--text-dim);
     text-decoration: underline;
-    text-underline-offset: 3px; /* Keeps the underline readable */
+    text-underline-offset: 3px; 
     cursor: pointer;
     transition: color 0.2s ease;
 }
 
-/* Turns your orange accent color when hovered */
 .ghost-link:hover {
     color: var(--accent);
 }
 
-/* Simple hover effect to swap to your dimmed accent color */
 .btn-primary-1:hover {
     background: var(--accent-dim);
 }
 
-/* Master Screen Layout */
 .login-container {
     display: flex;
     width: 100%;
@@ -250,13 +225,12 @@
     overflow: hidden;
 }
 
-/* LEFT HALF: Shifted slightly to the left */
 .form-section {
     flex: 1;
     display: flex;
-    justify-content: flex-start; /* MODIFIED: Aligns form to the left side */
+    justify-content: flex-start;
     align-items: center;
-    padding-left: 10%; /* Shifts it in from the edge perfectly */
+    padding-left: 10%;
     padding-right: 5%;
     z-index: 2;
 }
@@ -267,9 +241,8 @@
     max-width: 400px;
 }
 
-/* RIGHT HALF: Geometric Image Styling */
 .image-section {
-    flex: 1.2; /* Gives the image a slightly wider presence */
+    flex: 1.2; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -277,18 +250,13 @@
     position: relative;
 }
 
-/* The frame that cuts the image and holds the custom border token */
 .image-wrapper {
     width: 100%;
     height: 85vh;
     position: relative;
-    background: var(--line); /* Creates a subtle frame border edge */
-    padding: 2px; /* Border thickness */
-
-    /* MODIFIED: Cuts the wrapper into a sharp, geometric high-tech angle */
+    background: var(--line);
+    padding: 2px; 
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-    /* MODIFIED: Smoothly fades the entire element to the right */
     mask-image: linear-gradient(
         to right,
         rgba(0, 0, 0, 1) 60%,
@@ -301,32 +269,27 @@
     );
 }
 
-/* Inside Image Settings */
 .side-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-
-    /* Keeps the exact same cut profile as the border container wrapper */
     clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 .login-container {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    min-height: 100vh; /* 100% of the viewport height */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .login-form {
     width: 100%;
-    max-width: 400px; /* Keeps the form at a readable width */
+    max-width: 400px;
     padding: 20px;
     background: white;
     border-radius: 8px;
 }
-
-/* --- Cart Page Specific Styles --- */
 
 .cart-summary {
     background: var(--bg-panel);
@@ -412,7 +375,6 @@
     padding: 18px;
 }
 
-/* --- Marquee Animation --- */
 .marquee-container {
     width: 100%;
     overflow: hidden;
@@ -452,7 +414,6 @@
     }
 }
 
-/* About Page Specific Styles */
 .mission-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
