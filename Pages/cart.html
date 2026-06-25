@@ -6,7 +6,7 @@
         <title>Forge — Cart</title>
         <link rel="stylesheet" href="/style.css" type="text/css" />
         <link rel="stylesheet" href="/Pages/style.css" type="text/css" />
-        <link rel="icon" href="/public/favicon.svg" />
+        <link rel="icon" href="favicon.svg" />
     </head>
     <body>
         <header>
@@ -22,7 +22,12 @@
                     <a href="/Pages/about.html">About Us</a>
                 </nav>
                 <div class="nav-actions">
-                    <a href="/Pages/cart.html" class="cart-btn" style="color:#ffffff">Cart · <span class="cart-count">0</span></a>
+                    <a
+                        href="/Pages/cart.html"
+                        class="cart-btn"
+                        style="color: #ffffff"
+                        >Cart · <span class="cart-count">0</span></a
+                    >
                 </div>
             </div>
         </header>
@@ -42,26 +47,45 @@
                     </div>
                 </div>
                 <div class="cart-actions">
-                    <a href="/Pages/shop.html" class="btn-secondary">Continue shopping</a>
-                    <button class="btn-primary clear-cart-btn">Clear cart</button>
+                    <a href="/Pages/shop.html" class="btn-secondary"
+                        >Continue shopping</a
+                    >
+                    <button class="btn-primary clear-cart-btn">
+                        Clear cart
+                    </button>
                 </div>
                 <div class="checkout-section">
                     <h2>Payment method</h2>
                     <div class="payment-methods">
                         <label class="payment-option">
-                            <input type="radio" name="paymentMethod" value="card" checked />
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="card"
+                                checked
+                            />
                             Credit / Debit Card
                         </label>
                         <label class="payment-option">
-                            <input type="radio" name="paymentMethod" value="paypal" />
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="paypal"
+                            />
                             PayPal
                         </label>
                         <label class="payment-option">
-                            <input type="radio" name="paymentMethod" value="apple" />
+                            <input
+                                type="radio"
+                                name="paymentMethod"
+                                value="apple"
+                            />
                             Apple Pay
                         </label>
                     </div>
-                    <button class="btn-primary checkout-btn">Proceed to payment</button>
+                    <button class="btn-primary checkout-btn">
+                        Proceed to payment
+                    </button>
                 </div>
             </section>
         </main>
