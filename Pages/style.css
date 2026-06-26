@@ -466,6 +466,61 @@
     color: var(--accent);
 }
 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background: var(--bg-panel);
+    border: 1px solid var(--line);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    transition: border-color 0.2s ease;
+}
+
+.team-card:hover {
+    border-color: var(--accent);
+}
+
+.team-avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--line);
+    color: var(--text);
+    font-family: var(--font-display);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    font-size: 1.5rem;
+}
+
+.team-card h3 {
+    font-family: var(--font-display);
+    margin-bottom: 8px;
+}
+
+.team-card .role {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.team-card .bio {
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 @media (max-width: 900px) {
     .mission-grid {
         grid-template-columns: 1fr;
